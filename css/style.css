@@ -73,7 +73,7 @@ header img {
 	padding: 40px 5% 20px 50%;
 	/*padding-top: 66.64%;*/
 	background-size: 100%;
-	background-repeat: no-repeat;
+	/*background-repeat: no-repeat;*/
 	background-image: url("../image/pierre-chatel-innocenti-F4VHOj76D0o-unsplash_cutted.jpg");
 }
 
@@ -111,7 +111,6 @@ header img {
 	#s_about_us {
 		padding-top: 20px;
 		padding-left: 30%;
-		background-repeat: repeat;
 	}
 	
 }
