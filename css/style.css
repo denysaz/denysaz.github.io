@@ -74,7 +74,7 @@ header img {
 	/*padding-top: 66.64%;*/
 	background-size: 100%;
 	background-repeat: no-repeat;
-	background-image: url("E:/windowrepair/WindowRepair/image/pierre-chatel-innocenti-F4VHOj76D0o-unsplash_cutted.jpg");
+	background-image: url("../image/pierre-chatel-innocenti-F4VHOj76D0o-unsplash_cutted.jpg");
 }
 
 
@@ -118,7 +118,7 @@ header img {
 
 @media (max-width: 850px) {
 	#s_about_us {
-		background-image: url("E:/windowrepair/WindowRepair/image/pierre-chatel-innocenti-F4VHOj76D0o-unsplash_CUTTED2.jpg");
+		background-image: url("../image/pierre-chatel-innocenti-F4VHOj76D0o-unsplash_CUTTED2.jpg");
 	}
 }
 
