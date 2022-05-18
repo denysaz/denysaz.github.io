@@ -183,16 +183,16 @@ article h3 {
 	flex-direction: column;*/
 	width: 48%;
 	
-	background: #bcd2dd;/*bcd2dd 337ab7 151b4e dabc28 d7d067*/
+	background: #bcd2dd;/*bcd2dd 337ab7 151b4e dabc28 d7d067 */
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
 .div_about_window td, .div_about_window h1, .div_about_window h3 {
-	font-size: 1.4em;
+	font-size: 1.5em;
 	color: #ffffff;
 	word-wrap: break-word;
-	text-shadow: 0 0 3px #000;
+	text-shadow: -1px 0 0px #000, 0 0 2px #151b4e;
 }
 .div_about_window h1 {
 	margin-bottom: 0px;
@@ -200,9 +200,14 @@ article h3 {
 
 .div_about_window a {
 	display: block;
+	width: 90%;
+	margin: auto;
 	text-decoration: none;
 	color: #151b4e;
-	padding: 10px;
+	
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
 	font-size: 1.1em;
 	background: #ffffff;
 	/*max-width: 350px;*/
@@ -219,6 +224,7 @@ article h3 {
 	flex-wrap: wrap;
 	
 }
+
 
 @media (max-width: 700px) {
 	.div_about_window {
