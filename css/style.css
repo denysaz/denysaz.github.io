@@ -183,22 +183,23 @@ article h3 {
 	flex-direction: column;*/
 	width: 48%;
 	
-	background: #bcd2dd;/*bcd2dd 337ab7 151b4e dabc28 */
+	background: #bcd2dd;/*bcd2dd 337ab7 151b4e dabc28 d7d067*/
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
 .div_about_window td, .div_about_window h1, .div_about_window h3 {
-	font-size: 1.5em;
+	font-size: 1.4em;
 	color: #ffffff;
 	word-wrap: break-word;
-	text-shadow: 0 0 1px #151b4e;
+	text-shadow: 0 0 3px #000;
 }
 .div_about_window h1 {
 	margin-bottom: 0px;
 }
 
 .div_about_window a {
+	display: block;
 	text-decoration: none;
 	color: #151b4e;
 	padding: 10px;
