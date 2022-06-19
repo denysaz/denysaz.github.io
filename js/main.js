@@ -84,6 +84,9 @@ function open_close_wpm(b_number) {
 			break;
 			case 5: {changeDisplayFlex("dpm_epsilon"); change_button_style("b_dpm_epsilon");} 
 			break;
+			case 6: {changeDisplayFlex("dpm_rehau"); change_button_style("b_dpm_rehau");}
+			break;
+			case 7: {changeDisplayFlex("dpm_wds"); change_button_style("b_dpm_wds");}
 		}
 }
 

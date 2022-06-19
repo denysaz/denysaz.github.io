@@ -250,7 +250,7 @@ article h3 {
 	max-width: 180px;
 
 }
-#wpm_rehau img {
+#wpm_rehau img, #dpm_rehau img {
 	width: 100%;
 	max-width: 250px;
 
