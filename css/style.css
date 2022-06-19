@@ -28,6 +28,8 @@ header p {
 
 #social_div {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	padding: 0 10px 10px;
 }
 
@@ -36,8 +38,9 @@ header p {
 	margin-right: 10px;
 }
 
-#phone_number {
-	padding-top: 5px;
+#phone_number a {
+	font-size: 1.3em;
+	color: #151b4e;
 }
 
 header img {
@@ -102,7 +105,7 @@ header img {
 
 #nav_about_window {
 	width: 100%;
-	
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-color: #dbbd2a;
@@ -110,7 +113,7 @@ header img {
 
 .aw_part_button {
 	border: 0;
-	height: 60px;
+	height: 50px;
 	width: 15%;
 	background-color: #dbbd2a;
 	font-size: 16px;
@@ -134,12 +137,18 @@ article h3 {
 	align-items: center;
 	justify-content: center;
 }
+#dpm_b_list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
 
 .win_prof_manuf {
 	width: 100%;
 	border-width: 2px;
 	border-color: #dbbdbd;
-	height: 40px;
+	height: 35px;
 	background-color: #dbbd2a;
 	font-size: 16px;
 	margin-top: 3px;
@@ -149,6 +158,7 @@ article h3 {
 .f_column {
 	text-align: center;
 	width: 35%;
+	padding-right: 4px;
 }
 
 .div_about_window table {
@@ -190,9 +200,9 @@ article h3 {
 
 .div_about_window td, .div_about_window h1, .div_about_window h3 {
 	font-size: 1.5em;
-	color: #ffffff;
+	color: #151b4e;
 	word-wrap: break-word;
-	text-shadow: -1px 0 0px #000, 0 0 2px #151b4e;
+	/*text-shadow: -1px 0 0px #000, 0 0 2px #151b4e;*/
 }
 .div_about_window h1 {
 	margin-bottom: 0px;
@@ -200,7 +210,7 @@ article h3 {
 
 .div_about_window a {
 	display: block;
-	width: 90%;
+	width: 80%;
 	margin: auto;
 	text-decoration: none;
 	color: #151b4e;
@@ -208,7 +218,7 @@ article h3 {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	
-	font-size: 1.1em;
+	font-size: 1.2em;
 	background: #ffffff;
 	/*max-width: 350px;*/
 	text-align: center;
@@ -220,39 +230,57 @@ article h3 {
 	flex-direction: column;*/
 	display: flex;
 	justify-content: space-evenly;
-	align-items: center;
+	
 	flex-wrap: wrap;
 	
 }
 
-
-@media (max-width: 700px) {
-	.div_about_window {
-		width: 100%;
-	}
+.daw_data div {
+	margin-bottom: 20px;
 }
+
 
 #wpm_wds img {
 	width: 100%;
 	max-width: 250px;
-	margin-top: 20px;
+
 }
 #wpm_salamander img {
 	width: 100%;
-	max-width: 200px;
-	margin-top: 20px;
+	max-width: 180px;
+
 }
 #wpm_rehau img {
 	width: 100%;
 	max-width: 250px;
-	margin-top: 20px;
+
 }
-#wpm_epsilon img {
+#wpm_epsilon img, #dpm_epsilon img {
 	width: 100%;
-	max-width: 250px;
-	margin-top: 20px;
+	max-width: 200px;
+
 }
 
+.div_about_defin {
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+.b_about_defin {
+	margin: 10px;
+	background-color: #d7d067;
+	border: 1px solid;
+	padding: 5px;
+}
+
+#nav_about_window button:hover, article button:hover {
+	background-color: #c69000;
+	color: #fff;
+}
+/*button:active {
+	background-color: #c69000;
+	color: #000;
+}*/
 
 
 @media (max-width: 400px) {
@@ -260,6 +288,7 @@ article h3 {
 		font-size: 14px;
 	}	
 }
+
 @media (max-width: 350px) {
 	table td {
 		font-size: 12px;
@@ -269,6 +298,7 @@ article h3 {
 @media (max-width: 700px) {
 	#nav_about_window {
 		flex-direction: column;
+		/*display: none;*/
 	}
 	#naw_b_icon {
 		display: flex;
@@ -278,11 +308,12 @@ article h3 {
 	.aw_part_button {
 		width: 100%;
 	}
+	.div_about_window {
+		width: 100%;
+	}
 }
 
-#testtest {
-	height: 500px;
-}
+
 
 @media (max-width: 1150px) {
 	#s_about_us {

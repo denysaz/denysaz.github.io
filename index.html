@@ -44,7 +44,7 @@
 			<p>Ми допоможемо Вам підібрати вікна та двері відповідно до ваших потреб, 
 				зробимо заміри й встановимо все максимально професійно, швидко та якісно!</p>
 			<p>Завдяки нашій прямій співпраці з заводами виробниками, Ви отримаєте можливість НЕ переплачувати посередникам! 
-				А при оформленні заявки на встановлення (монтаж) у ТРАВНІ, Ви отримаєте ЗНИЖКУ 10% на кожне вікно (двері).</p>
+				А при оформленні заявки на встановлення (монтаж) у ЧЕРВНІ, Ви отримаєте ЗНИЖКУ 10% на кожне вікно (двері).</p>
 			<div class="div_separate"></div>
 			<h2><u>Ремонт, регулюввання</u> металопластикових ВІКОН і ДВЕРЕЙ у Львові й Львівській області.</h2>
 			<p>Вирішення всіх можливих <a>несправностей</a>, регулювання або заміна фурнітури, заміна ущільнювача, 
@@ -56,32 +56,39 @@
 	</section>
 	
 	<section id="s_about_window">
-		<h1>Встановлення (монтаж) металопластикових ВІКОН і ДВЕРЕЙ</h1>
-		<h2>Що потрібно знати для вибору? Які мпвд ми можемо запропонувати</h2>
+		<h1>Каталог металопластикових ВІКОН і ДВЕРЕЙ</h1>
 		<div>
-			<button class="aw_part_button" id="naw_b_icon" onclick="mobile_nav_about_window()">
-					<p id="naw_header"></p><img id src="image/icons8-menu-50.png"></button>
-			<div style="display: flex;" id="nav_about_window">
-				<button class="aw_part_button" onclick="b_naw_(1)">Профіль (рама)</button>
-				<button class="aw_part_button" onclick="b_naw_(2)">Ламінація</button>
-				<button class="aw_part_button" onclick="b_naw_(3)">Типи відкривання</button>
-				<button class="aw_part_button" onclick="b_naw_(4)">Фурнітура</button>
-				<button class="aw_part_button" onclick="b_naw_(5)">Додаткові комплектуючі</button>
+			
+			<div id="nav_about_window">
+				<button id="aw_part_button1" class="aw_part_button" onclick="b_naw_(1)" style="background-color: #c69000; color: #fff;"> Профіль (рама)</button>
+				<button id="aw_part_button2" class="aw_part_button" onclick="b_naw_(2)">Ламінація</button>
+				<button id="aw_part_button3" class="aw_part_button" onclick="b_naw_(3)">Типи відкривання</button>
+				<button id="aw_part_button4" class="aw_part_button" onclick="b_naw_(4)">Фурнітура</button>
+				<button id="aw_part_button5" class="aw_part_button" onclick="b_naw_(5)">Додаткові комплектуючі</button>
 			</div>
+			<!--<button class="aw_part_button" id="naw_b_icon" onclick="changeDisplayFlex('nav_about_window')">
+					<p id="naw_header">Профіль (рама)</p><img id src="image/icons8-menu-50.png"></button>
+			<div id="nav_about_window">
+				<button id="aw_part_button1" class="aw_part_button" onclick="b_naw_(1)" style="background-color: #c69000; color: #fff;"> Профіль (рама)</button>
+				<button id="aw_part_button2" class="aw_part_button" onclick="b_naw_(2)">Ламінація</button>
+				<button id="aw_part_button3" class="aw_part_button" onclick="b_naw_(3)">Типи відкривання</button>
+				<button id="aw_part_button4" class="aw_part_button" onclick="b_naw_(4)">Фурнітура</button>
+				<button id="aw_part_button5" class="aw_part_button" onclick="b_naw_(5)">Додаткові комплектуючі</button>
+			</div>-->
 			<article>
-				<button>Що таке профіль</button>
-				<div>
+				<div id="aw_part_article1">
+				<button id="b_about_defin_profile" class="b_about_defin" onclick="open_close_about_defin(1)">Що таке профіль</button>
+				<div id="about_defin_profile" class="div_about_defin" style="display: none;">
 					<p> Віконний профіль - це нерухома частина віконного блоку, оболонка всієї конструкції, кріпиться в проєм за допомогою дюбелів або анкерних пластин. 
-						На цоьму елементі тримається вся конструкція й грунтується енергозбереження. 
+						На цьому елементі тримається вся конструкція й грунтується енергозбереження. 
 						Від якості профілю залежить те, наскільки теплим буде вікно.</p>
-					<p>Перш за все необхідно зупинитися на виборі якісного профілю.
-						Зокрема пропонуємо звернути увагу на основні фактори: </p>
+					<p>Під час вибору профілю пропонуємо звернути увагу на основні фактори: </p>
 					<p> - кількість камер;</p>
-					<p> - відстань між шарами скла (можлива товщина склопакета);</p>
+					<p> - можлива товщина склопакета;</p>
 				</div>
-				<h3>Вікна Двері</h3>
+				<h3>Вікна</h3>
 				<div id="wpm_b_list">
-					<button class="win_prof_manuf" onclick="open_close_table(1)">EPSILON</button>
+					<button id="b_wpm_epsilon" class="win_prof_manuf" onclick="open_close_wpm(1)">EPSILON</button>
 						<div style="display: none;" class="wpm_width" id="wpm_epsilon">
 														
 							<div class="div_about_window">
@@ -99,7 +106,7 @@
 												<td class="f_column">44мм</td><td>склопакет</td>
 											</tr>
 											<tr>
-												<td class="f_column">70мм</td><td>монтажна ширина</td>
+												<td class="f_column">70мм</td><td>монтажна глибина</td>
 											</tr>
 										</table>
 										<a href="https://okna-epsilon.com/plastikovye-okna-dveri/metalloplastikovye-okna/epsilon-optima" target="_blank">Переглянути на сайті виробника</a>
@@ -122,7 +129,7 @@
 												<td class="f_column">24-32мм</td><td>склопакет</td>
 											</tr>
 											<tr>
-												<td class="f_column">58мм</td><td>монтажна ширина</td>
+												<td class="f_column">58мм</td><td>монтажна глибина</td>
 											</tr>
 										</table>
 										<a href="https://okna-epsilon.com/plastikovye-okna-dveri/metalloplastikovye-okna/epsilon-comfort" target="_blank">Переглянути на сайті виробника</a>
@@ -145,7 +152,7 @@
 											<td class="f_column">24-32мм</td><td>склопакет</td>
 										</tr>
 										<tr>
-											<td class="f_column">58мм</td><td>монтажна ширина</td>
+											<td class="f_column">58мм</td><td>монтажна глибина</td>
 										</tr>
 									</table>
 									<a href="https://okna-epsilon.com/plastikovye-okna-dveri/metalloplastikovye-okna/epsilon-basic" target="_blank">Переглянути на сайті виробника</a>
@@ -153,11 +160,35 @@
 								<div><img src="image\epsilon_3Basic.jpg"></div>
 								</div>
 							</div>
+							<div class="div_about_window">
+								
+								<h1>Epsilon PORTAL</h1>
+								<h3>Розсувна система - "портал" - унікальне конструкторське рішення, яке широко 
+									застосовується в організації проємів як в заміських будинках (скління веранд, терас), 
+									так і в квартирах  (виходи на балкони, лоджії).</h3>
+								<div class="daw_data">
+									<div>
+									<table>
+										<tr>
+											<td class="f_column">5</td><td>камер</td>
+										</tr>
+										<tr>
+											<td class="f_column">44мм</td><td>склопакет</td>
+										</tr>
+										<tr>
+											<td class="f_column">70мм</td><td>монтажна глибина</td>
+										</tr>
+									</table>
+									<a href="https://okna-epsilon.com/plastikovye-okna-dveri/razdvizhnye-sistemy/razdvizhnye-sistemy" target="_blank">Переглянути на сайті виробника</a>
+									</div>
+								<div><img src="image\epsilon_portal_2022.jpg"></div>
+								</div>
+							</div>
 							
 						</div>
 						
 						
-					<button class="win_prof_manuf" onclick="open_close_table(2)">REHAU</button>
+					<button id="b_wpm_rehau" class="win_prof_manuf" onclick="open_close_wpm(2)">REHAU</button>
 						<div style="display: none;" class="wpm_width" id="wpm_rehau">
 							<div class="div_about_window">
 								<h1>REHAU GENEO RAU-FIPRO X</h1>
@@ -172,7 +203,7 @@
 												<td class="f_column">53мм</td><td>склопакет</td>
 											</tr>
 											<tr>
-												<td class="f_column">86мм</td><td>монтажна ширина</td>
+												<td class="f_column">86мм</td><td>монтажна глибина</td>
 											</tr>
 										</table>
 										<a href="https://www.rehau.com/ua-uk/rehau-geneo-rau-fipro-x" target="_blank">Переглянути на сайті виробника</a>
@@ -195,7 +226,7 @@
 												<td class="f_column">51мм</td><td>склопакет</td>
 											</tr>
 											<tr>
-												<td class="f_column">80мм</td><td>монтажна ширина</td>
+												<td class="f_column">80мм</td><td>монтажна глибина</td>
 											</tr>
 										</table>
 										<a href="https://www.rehau.com/ua-uk/rehau-synego" target="_blank">Переглянути на сайті виробника</a>
@@ -218,7 +249,7 @@
 												<td class="f_column">41мм</td><td>склопакет</td>
 											</tr>
 											<tr>
-												<td class="f_column">70-80мм</td><td>монтажна ширина</td>
+												<td class="f_column">70-80мм</td><td>монтажна глибина</td>
 											</tr>
 										</table>
 										<a href="https://www.rehau.com/ua-uk/brillant-design" target="_blank">Переглянути на сайті виробника</a>
@@ -241,7 +272,7 @@
 												<td class="f_column">41мм</td><td>склопакет</td>
 											</tr>
 											<tr>
-												<td class="f_column">70мм</td><td>монтажна ширина</td>
+												<td class="f_column">70мм</td><td>монтажна глибина</td>
 											</tr>
 										</table>
 										<a href="https://www.rehau.com/ua-uk/euro-design-70" target="_blank">Переглянути на сайті виробника</a>
@@ -267,7 +298,7 @@
 												<td class="f_column">33мм</td><td>склопакет</td>
 											</tr>
 											<tr>
-												<td class="f_column">60мм</td><td>монтажна ширина</td>
+												<td class="f_column">60мм</td><td>монтажна глибина</td>
 											</tr>
 										</table>
 										<a href="https://www.rehau.com/ua-uk/rehau-euro-design-60" target="_blank">Переглянути на сайті виробника</a>
@@ -278,7 +309,7 @@
 							
 						</div>
 						
-					<button class="win_prof_manuf" onclick="open_close_table(3)">SALAMANDER</button>
+					<button id="b_wpm_salamander" class="win_prof_manuf" onclick="open_close_wpm(3)">SALAMANDER</button>
 						<div style="display: none;" class="wpm_width" id="wpm_salamander">
 							<div class="div_about_window">
 								
@@ -294,7 +325,7 @@
 												<td class="f_column">60мм</td><td>склопакет</td>
 											</tr>
 											<tr>
-												<td class="f_column">92мм</td><td>монтажна ширина</td>
+												<td class="f_column">92мм</td><td>монтажна глибина</td>
 											</tr>
 										</table>
 										<a href="https://salamander.com.ua/ua/profile-systems/salamander-bluevolution/" target="_blank">Переглянути на сайті виробника</a>
@@ -317,7 +348,7 @@
 												<td class="f_column">32-40мм</td><td>склопакет</td>
 											</tr>
 											<tr>
-												<td class="f_column">76мм</td><td>монтажна ширина</td>
+												<td class="f_column">76мм</td><td>монтажна глибина</td>
 											</tr>
 										</table>
 										<a href="https://salamander.com.ua/ua/profile-systems/salamander-streamline/" target="_blank">Переглянути на сайті виробника</a>
@@ -340,7 +371,7 @@
 												<td class="f_column">24-32мм</td><td>склопакет</td>
 											</tr>
 											<tr>
-												<td class="f_column">60мм</td><td>монтажна ширина</td>
+												<td class="f_column">60мм</td><td>монтажна глибина</td>
 											</tr>
 										</table>
 										<a href="https://salamander.com.ua/ua/profile-systems/salamander-2d/" target="_blank">Переглянути на сайті виробника</a>
@@ -363,7 +394,7 @@
 											<td class="f_column">48мм</td><td>склопакет</td>
 										</tr>
 										<tr>
-											<td class="f_column">172мм</td><td>монтажна ширина</td>
+											<td class="f_column">172мм</td><td>монтажна глибина</td>
 										</tr>
 									</table>
 									<a href="https://salamander.com.ua/ua/profile-systems/salamander-hebeschiebetur/" target="_blank">Переглянути на сайті виробника</a>
@@ -373,7 +404,7 @@
 							</div>
 							
 						</div>
-					<button class="win_prof_manuf" onclick="open_close_table(4)">WDS</button>
+					<button id="b_wpm_wds" class="win_prof_manuf" onclick="open_close_wpm(4)">WDS</button>
 						<div style="display: none;" class="wpm_width" id="wpm_wds">
 							<div class="div_about_window">
 								
@@ -389,7 +420,7 @@
 												<td class="f_column">44мм</td><td>склопакет</td>
 											</tr>
 											<tr>
-												<td class="f_column">82мм</td><td>монтажна ширина</td>
+												<td class="f_column">82мм</td><td>монтажна глибина</td>
 											</tr>
 										</table>
 										<a href="https://wds.ua/window/wds-8s/" target="_blank">Переглянути на сайті виробника</a>
@@ -413,7 +444,7 @@
 												<td class="f_column">40мм</td><td>склопакет</td>
 											</tr>
 											<tr>
-												<td class="f_column">70мм</td><td>монтажна ширина</td>
+												<td class="f_column">70мм</td><td>монтажна глибина</td>
 											</tr>
 										</table>
 										<a href="https://wds.ua/window/wds-7s/" target="_blank">Переглянути на сайті виробника</a>
@@ -436,7 +467,7 @@
 												<td class="f_column">40мм</td><td>склопакет</td>
 											</tr>
 											<tr>
-												<td class="f_column">70мм</td><td>монтажна ширина</td>
+												<td class="f_column">70мм</td><td>монтажна глибина</td>
 											</tr>
 										</table>
 										<a href="https://wds.ua/window/wds-6s/" target="_blank">Переглянути на сайті виробника</a>
@@ -459,7 +490,7 @@
 												<td class="f_column">32мм</td><td>склопакет</td>
 											</tr>
 											<tr>
-												<td class="f_column">60мм</td><td>монтажна ширина</td>
+												<td class="f_column">60мм</td><td>монтажна глибина</td>
 											</tr>
 										</table>
 										<a href="https://wds.ua/window/wds-5s/" target="_blank">Переглянути на сайті виробника</a>
@@ -481,80 +512,132 @@
 						</div>
 					
 				</div>
-				
-				
-				
+				<h3>Двері</h3>
+				<div id="dpm_b_list"> 
+					<button id="b_dpm_epsilon" class="win_prof_manuf" onclick="open_close_wpm(5)">EPSILON</button>
+					<div style="display: none;" class="wpm_width" id="dpm_epsilon">
+						<div class="div_about_window">
+								
+								<h1>Epsilon Т 104/58</h1>
+								<h3>Високий рівень енергозбереження створює зручності при використанні в приватних будинках,
+									за містом або в міських квартирах, з підвищеними вимогами до енергозбереження.</h3>
+								<div class="daw_data">
+									<div>
+									<table>
+										<tr>
+											<td class="f_column"></td><td>камер</td>
+										</tr>
+										<tr>
+											<td class="f_column">24-34мм</td><td>склопакет</td>
+										</tr>
+										<tr>
+											<td class="f_column">58мм</td><td>монтажна глибина</td>
+										</tr>
+										<tr>
+											<td class="f_column">Зовнішнє</td><td>відкривання</td>
+										</tr>
+									</table>
+									<a href="https://okna-epsilon.com/plastikovye-okna-dveri/metalloplastikovye-dveri/dveri-zovnishnogo-vidkrivannja-t-104-58-ta-t-104-70" target="_blank">Переглянути на сайті виробника</a>
+									</div>
+								<div><img src="image\epsilon_t104_58.jpg"></div>
+								</div>
+							</div>
+						<div class="div_about_window">
+								
+								<h1>Epsilon Т 104/58</h1>
+								<h3>Високий рівень енергозбереження створює зручності при використанні в приватних будинках,
+									за містом або в міських квартирах, з підвищеними вимогами до енергозбереження.</h3>
+								<div class="daw_data">
+									<div>
+									<table>
+										<tr>
+											<td class="f_column"></td><td>камер</td>
+										</tr>
+										<tr>
+											<td class="f_column">24-34-44мм</td><td>склопакет</td>
+										</tr>
+										<tr>
+											<td class="f_column">70мм</td><td>монтажна глибина</td>
+										</tr>
+										<tr>
+											<td class="f_column">Зовнішнє</td><td>відкривання</td>
+										</tr>
+									</table>
+									<a href="https://okna-epsilon.com/plastikovye-okna-dveri/metalloplastikovye-dveri/dveri-zovnishnogo-vidkrivannja-t-104-58-ta-t-104-70" target="_blank">Переглянути на сайті виробника</a>
+									</div>
+								<div><img src="image\epsilon_Y_104_70_porig_2.jpg"></div>
+								</div>
+							</div>
+						<div class="div_about_window">
+								
+								<h1>Epsilon S 96/58</h1>
+								<h3>Високий рівень енергозбереження створює зручності при використанні в приватних будинках,
+									за містом або в міських квартирах, з підвищеними вимогами до енергозбереження.</h3>
+								<div class="daw_data">
+									<div>
+									<table>
+										<tr>
+											<td class="f_column"></td><td>камер</td>
+										</tr>
+										<tr>
+											<td class="f_column">24-34мм</td><td>склопакет</td>
+										</tr>
+										<tr>
+											<td class="f_column">58мм</td><td>монтажна глибина</td>
+										</tr>
+										<tr>
+											<td class="f_column">Внутрішнє</td><td>відкривання</td>
+										</tr>
+									</table>
+									<a href="https://okna-epsilon.com/plastikovye-okna-dveri/metalloplastikovye-dveri/epsilon-t-92-t-104-z-104" target="_blank">Переглянути на сайті виробника</a>
+									</div>
+								<div><img src="image\epsilon_z_96_new.jpg"></div>
+								</div>
+							</div>
+						<div class="div_about_window">
+								
+								<h1>Epsilon S 104/70</h1>
+								<h3>Високий рівень енергозбереження створює зручності при використанні в приватних будинках,
+									за містом або в міських квартирах, з підвищеними вимогами до енергозбереження.</h3>
+								<div class="daw_data">
+									<div>
+									<table>
+										<tr>
+											<td class="f_column"></td><td>камер</td>
+										</tr>
+										<tr>
+											<td class="f_column">24-34-44мм</td><td>склопакет</td>
+										</tr>
+										<tr>
+											<td class="f_column">70мм</td><td>монтажна глибина</td>
+										</tr>
+										<tr>
+											<td class="f_column">Внутрішнє</td><td>відкривання</td>
+										</tr>
+									</table>
+									<a href="https://okna-epsilon.com/plastikovye-okna-dveri/metalloplastikovye-dveri/epsilon-t-92-t-104-z-104" target="_blank">Переглянути на сайті виробника</a>
+									</div>
+								<div><img src="image\epsilon_z_104_new.jpg"></div>
+								</div>
+							</div>
+							
+					</div>
+				</div>
+				</div>
+				<div id="aw_part_article2">
+				</div>
+				<div id="aw_part_article3">
+				</div>
+				<div id="aw_part_article4">
+				</div>
+				<div id="aw_part_article5">
+				</div>
 			</article>
 					
 		</div>
 	</section>
-	
-	<section id="testtest">
-		
-	</section>
+	<section> </section>
 	<script src="js/main.js"></script>
   </body>
 </html>
-
-
-<!--
-<table style="display: none;" id="t_epsilon">
-						<tr>
-						<td class="f_column">Назва</td><td>Optima</td><td>Comfort</td><td>Basic</td>
-						</tr>
-						<tr>
-						<td class="f_column">Кількість камер, шт</td><td>6</td><td>4</td><td>3</td>
-						</tr>
-						<tr>
-						<td class="f_column">Можлива товщина склопакету, мм</td><td>44</td><td>24,32</td><td>24,32</td>
-						</tr>
-						<tr>
-						<td class="f_column">Особливості</td><td>Класичний</td><td>Класичний</td><td>Класичний</td>
-						</tr>
-					</table>
-<table style="display: none;" id="t_rehau">
-						<tr>
-						<td class="f_column">Назва</td><td>GENEO RAU-FIPRO X</td><td>SYNEGO</td><td>Brillant-Design</td><td>Euro-Design 70</td><td>Euro-Design 60</td>
-						</tr>
-						<tr>
-						<td class="f_column">Кількість камер, шт</td><td>6</td><td>6, 7</td><td>5, 6</td><td>5</td><td>3</td>
-						</tr>
-						<tr>
-						<td class="f_column">Можлива товщина склопакету, мм</td><td>53</td><td>51</td><td>41</td><td>41</td><td>33</td>
-						</tr>
-						<tr>
-						<td class="f_column">Особливості</td><td>Для проєктів з вікнами замість стін – висота стулок до 2.8 м</td><td></td><td></td><td>Оптимальний вибір</td><td>Практичний вибір для неопалювальних приміщень, балконів, лоджій або альтанок.</td>
-						</tr>
-					</table>
-<table style="display: none;" id="t_salamander">
-						<tr>
-						<td class="f_column">Назва</td><td>bluEvolution</td><td>Streamline 76</td><td>2D</td><td>HST</td>
-						</tr>
-						<tr>
-						<td class="f_column">Кількість камер, шт</td><td>6</td><td>5</td><td>3</td><td>3</td>
-						</tr>
-						<tr>
-						<td class="f_column">Можлива товщина склопакету, мм</td><td>60</td><td>32, 40</td><td>24,32</td><td>48</td>
-						</tr>
-						<tr>
-						<td class="f_column">Особливості</td><td></td><td></td><td>Класичні</td><td>Розсувні</td>
-						</tr>
-					</table>
-<table style="display: table;" id="t_wds">
-						<tr>
-						<td class="f_column">Назва</td><td>8S</td><td>7S</td><td>6S</td><td>5S</td><td>SL60</td>
-						</tr>
-						<tr>
-						<td class="f_column">Кількість камер, шт</td><td>6</td><td>6</td><td>6</td><td>5</td><td>3</td>
-						</tr>
-						<tr>
-						<td class="f_column">Можлива товщина склопакету, мм</td><td>44</td><td>40</td><td>40</td><td>32</td><td>18</td>
-						</tr>
-						<tr>
-						<td class="f_column">Особливості</td><td></td><td></td><td>Більше світла</td><td>Класичні</td><td>Розсувні</td>
-						</tr>
-					</table>
-
- -->
-
 
