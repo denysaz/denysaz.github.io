@@ -324,7 +324,7 @@ article h3 {
 .b_faq {
 	width: 80%;
 	border-width: 1px;
-	height: 40px;
+	min-height: 40px;
 	background-color: #272932;
 	font-size: 1.3em;
 	color: #dabc2b;
