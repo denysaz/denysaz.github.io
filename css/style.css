@@ -40,10 +40,16 @@ header p {
 	margin-left: 10px;
 	margin-right: 10px;
 }
+#social_div a {
+	text-decoration: none;
+}
 
-#phone_number a {
-	font-size: 1.3em;
-	color: #151b4e;
+#phone_number {
+	font-size: 1.8em;
+	color: #161c50;
+}
+#phone_number:hover {
+	color: #fff;
 }
 
 header img {
@@ -60,9 +66,7 @@ header img {
 	margin-top: 5px;
 }
 
-.div_separate {
-	height: 5px;
-}
+
 
 #header_social_logo img {
 	max-width: 40px;
@@ -99,12 +103,19 @@ header img {
 	text-align: center;
 	color: #ffffff;
 }
+#div_about_us a  {
+	text-decoration: none;
+	color: #bcd2dd;
+}
 
 #s_about_window {
 	width: 85%;
 	margin: auto;
 }
+#s_about_window article {
+	border: solid 1px #d7d067;
 
+}
 #s_about_window h2 {
 	text-align: center;
 }
