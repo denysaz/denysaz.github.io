@@ -469,7 +469,7 @@ article h3 {
 #s_reports_page td {
 	padding: 5px  5%;
 	word-wrap:break-word;
-	min-width: 100px;
+	min-width: 140px;
 }
 #s_reports_page img {
 	width: 100%;
@@ -544,6 +544,12 @@ article h3 {
 	.b_faq {
 		width: 100%;
 	}
+	#s_reports_page article {
+		width: 96%;
+	}
+	.report_data {
+		width: 96%;
+	}
 	
 }
 
@@ -553,7 +559,14 @@ article h3 {
 		padding-top: 250px;
 	}
 }
-
+@media (max-width: 350px) {
+	#div_about_us {
+		padding: 5px;
+	}
+	#div_about_us h2 {
+		font-size: 1.3em;
+	}
+}
 /*@media (max-width: 400px) {
 	table td {
 		font-size: 14px;
