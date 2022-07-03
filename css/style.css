@@ -111,7 +111,7 @@ nav a:hover {
 	/*padding-top: 66.64%;*/
 	background-size: 100%;
 	/*background-repeat: no-repeat;*/
-	background-image: url("../image/pierre-chatel-innocenti-F4VHOj76D0o-unsplash_cutted.jpg");
+	background-image: url("../image/about_us_background_pc.jpg");
 	border-bottom: 15px solid #161c50;
 }
 
@@ -504,7 +504,7 @@ article h3 {
 
 @media (max-width: 900px) {
 	#s_about_us {
-		background-image: url("../image/pierre-chatel-innocenti-F4VHOj76D0o-unsplash_CUTTED2.jpg");
+		background-image: url("../image/about_us_background_mobile.jpg");
 	}
 	.report {
 		width: 75%;
