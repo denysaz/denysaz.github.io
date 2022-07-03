@@ -5,10 +5,10 @@ var prev_aw_article = "aw_part_article1";
 function changeMobileNav() {
 	
 	var nav_element = document.getElementById("main_nav");
-	if (nav_element.style.display === "none")  {
-		nav_element.style.display =  "flex";
+	if (nav_element.style.display === "flex")  {
+		nav_element.style.display =  "none";
 	} else {
-		nav_element.style.display = "none";
+		nav_element.style.display = "flex";
 	}
 	
 }

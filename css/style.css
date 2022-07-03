@@ -525,6 +525,7 @@ article h3 {
 		width: 75%;
 	}
 	nav {
+		display: none;
 		flex-direction: column;
 		height: auto;
 	}
