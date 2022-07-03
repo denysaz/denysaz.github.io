@@ -2,6 +2,17 @@
 var prev_aw_b = "aw_part_button1";
 var prev_aw_article = "aw_part_article1";
 
+function changeMobileNav() {
+	
+	var nav_element = document.getElementById("main_nav");
+	if (nav_element.style.display === "none")  {
+		nav_element.style.display =  "flex";
+	} else {
+		nav_element.style.display = "none";
+	}
+	
+}
+
 function b_naw_(n) {
 	switch (n) {
 			case 1: {b_nav_change("aw_part_button1", 'Профіль (рама)', 'aw_part_article1');} 
