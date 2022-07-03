@@ -106,11 +106,8 @@ nav a:hover {
 	width: 100%;
 }
 
-#s_about_us {/*
-	padding-top: 40px;
-	padding-left: 50%;
-	padding-right: 5%;*/
-	padding: 40px 5% 20px 50%;
+#s_about_us {
+	padding: 40px 5% 40px 50%;
 	/*padding-top: 66.64%;*/
 	background-size: 100%;
 	/*background-repeat: no-repeat;*/
@@ -138,8 +135,9 @@ nav a:hover {
 }
 
 #s_about_window {
-	width: 90%;
-	margin: auto;
+	
+	padding-left: 3%;
+	padding-right: 3%;
 }
 #s_about_window article {
 	border: solid 1px #d7d067;
@@ -195,7 +193,7 @@ article h3 {
 .win_prof_manuf {
 	width: 100%;
 	border-width: 2px;
-	border-color: #dbbdbd;
+	border-color: #c6900070;
 	height: 35px;
 	background-color: #dbbd2a;
 	font-size: 16px;
@@ -298,6 +296,10 @@ article h3 {
 
 .daw_data div {
 	margin-bottom: 20px;
+}
+
+.daw_data img {
+	display: none;
 }
 
 
@@ -418,6 +420,7 @@ article h3 {
 	max-width: 200px;
 	display: block;
 	margin: auto;
+	
 }
 .report b {
 	font-size: 1.2em;
@@ -471,12 +474,14 @@ article h3 {
 	word-wrap:break-word;
 	min-width: 140px;
 }
-#s_reports_page img {
+.opened_img {
 	width: 100%;
 	max-width: 300px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
+
 
 /*media*/
 
@@ -516,12 +521,12 @@ article h3 {
 	header p {
 		margin-top: 10px;
 	}
+	
 }
 
 @media (max-width: 700px) {
-	
 	#s_about_window {
-		width: 100%;
+		padding: 0;
 	}
 	#nav_about_window {
 		flex-direction: column;
@@ -550,6 +555,7 @@ article h3 {
 	.report_data {
 		width: 96%;
 	}
+	
 	
 }
 
