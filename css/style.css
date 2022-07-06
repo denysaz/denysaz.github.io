@@ -251,24 +251,16 @@ article h3 {
 	margin-right: auto;
 }
 
-.div_about_window table tr {
+.div_about_window tr {
 	border: 1px solid;
 	border-color: #fff;
-}
-
-.div_about_window table td {
-	word-wrap:break-word;
-	
-	/*border: 1px solid;
-	border-collapse: collapse;
-	*/
 }
 
 .div_about_window td {
 	font-size: 1.2em;
 	color: #151b4e;
-	word-wrap: break-word;
-	/*text-shadow: -1px 0 0px #000, 0 0 2px #151b4e;*/
+	
+	
 }
 .div_about_window b {
 	font-size: 1.3em;
@@ -397,14 +389,18 @@ article h3 {
 .b_faq {
 	width: 80%;
 	border-width: 1px;
-	min-height: 40px;
+	min-height: 45px;
 	background-color: #272932;
 	font-size: 1.3em;
 	color: #dabc2b;
-	margin-top: 4px;
-	margin-bottom: 4px;
+	margin-top: 8px;
+	
 }
-
+.faq_div {
+	width: 80%;
+	background-color: #f9f9f9;
+	display: none;
+}
 #reports {
 	border-top: 15px solid #161c50;
 }
@@ -483,9 +479,8 @@ article h3 {
 	border-color: #fff;
 }
 #s_reports_page td {
-	padding: 5px  5%;
-	word-wrap:break-word;
-	min-width: 140px;
+	padding: 5px  2%;
+	min-width: 120px;	
 }
 .opened_img {
 	width: 100%;
@@ -568,6 +563,9 @@ article h3 {
 	.b_faq {
 		width: 100%;
 	}
+	.faq_div {
+		width: 100%;
+	}
 	#s_reports_page article {
 		width: 96%;
 	}
@@ -590,6 +588,10 @@ article h3 {
 	}
 	#div_about_us h2 {
 		font-size: 1.3em;
+	}
+	#s_reports_page td {
+		padding: 5px  2%;
+		min-width: 0;	
 	}
 }
 /*@media (max-width: 400px) {

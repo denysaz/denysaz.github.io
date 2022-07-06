@@ -2,16 +2,6 @@
 var prev_aw_b = "aw_part_button1";
 var prev_aw_article = "aw_part_article1";
 
-function changeMobileNav() {
-	
-	var nav_element = document.getElementById("main_nav");
-	if (nav_element.style.display === "flex")  {
-		nav_element.style.display =  "none";
-	} else {
-		nav_element.style.display = "flex";
-	}
-	
-}
 
 function b_naw_(n) {
 	switch (n) {
@@ -60,16 +50,6 @@ function change_button_style(b_name) {
 
 
 
-function changeDisplayFlex(y) {
-	let x = document.getElementById(y);
-
-	if (x.style.display === "flex") {
-		x.style.display = "none";
-	} else {
-		x.style.display = "flex";
-		}
-}
-
 function open_close_about_defin(numberDefin) {
 	switch (numberDefin) {
 			case 1: {changeDisplayBlock("about_defin_profile"); change_button_style("b_about_defin_profile"); } 
@@ -101,6 +81,18 @@ function open_close_wpm(b_number) {
 		}
 }
 
+
+function changeDisplayFlex(y) {
+	let x = document.getElementById(y);
+
+	if (x.style.display === "flex") {
+		x.style.display = "none";
+	} else {
+		x.style.display = "flex";
+		}
+}
+
+
 function changeDisplayBlock(y) {
 	let x = document.getElementById(y);
 
@@ -111,6 +103,21 @@ function changeDisplayBlock(y) {
 		}
 }
 
+
+function open_close_faq(faq_numder) {
+	switch (faq_numder) {
+		case 1: {changeDisplayBlock("faq_div1");} 
+		break;
+		case 2: {changeDisplayBlock("faq_div2");} 
+		break;
+		case 3: {changeDisplayBlock("faq_div3");} 
+		break;
+		case 4: {changeDisplayBlock("faq_div4");} 
+		break;
+		case 5: {changeDisplayBlock("faq_div5");} 
+		break;
+	}
+}
 
 /*function b_nav_change(currentButton, currentLabel, currentArticle) {
 	let scwidth = document.body.clientWidth;

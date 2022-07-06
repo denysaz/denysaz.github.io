@@ -38,7 +38,7 @@
 			</div>	
 		</div>
 	</header>
-	<button id="b_change_nav" onclick="changeMobileNav()">
+	<button id="b_change_nav" onclick="changeDisplayFlex('main_nav')">
 				<span id="nav_current_page">Головна</span>
 				<img src="image/icons8-menu-50.png">
 	</button>
@@ -516,8 +516,9 @@
 							<p><b>WDS SL60</b></p>
 							<p>Розсувна система для вікон та дверей</p>
 							<div class="daw_data">
-								<a href="https://wds.ua/wds-sl-60/" target="_blank">Переглянути на сайті<br> виробника</a>
-								
+								<div>
+									<a href="https://wds.ua/wds-sl-60/" target="_blank">Переглянути на сайті<br> виробника</a>
+								</div>
 								<div><img style="max-width: 250px" src="image\wds_sl60_sliding_image1.jpg" loading="lazy"></div>
 							</div>
 						</div>
@@ -676,22 +677,22 @@
 		<h1>Наші роботи</h1>
 		<div id="reports_block">
 			<div class="report">
-				<a href="html/reports.html#mpw"><img src="image/photo_report1.jpg" loading="lazy"></a>
+				<a href="html/reports.html#mpw"><img src="image/report_compress1.jpg" loading="lazy"></a>
 				<a href="html/reports.html#mpw"><p><b>Металопластикові вікна</b></p></a>
 				<a href="html/reports.html#mpw"><p>Переглянути роботи</p></a>
 			</div>
 			<div class="report">
-				<a href="html/reports.html#mpd"><img src="image/photo_report1.jpg" loading="lazy"></a>
+				<a href="html/reports.html#mpd"><img src="image/report_compress1.jpg" loading="lazy"></a>
 				<a href="html/reports.html#mpd"><p><b>Металопластикові двері</b></p></a>
 				<a href="html/reports.html#mpd"><p>Переглянути роботи</p></a>
 			</div>
 			<div class="report">
-				<a href="html/reports.html#mpd2"><img src="image/photo_report1.jpg" loading="lazy"></a>
+				<a href="html/reports.html#mpd2"><img src="image/report_compress1.jpg" loading="lazy"></a>
 				<a href="html/reports.html#mpd2"><p><b>Вхідні двері</b></p></a>
 				<a href="html/reports.html#mpd2"><p>Переглянути роботи</p></a>
 			</div>
 			<div class="report">
-				<a href=""><img src="image/photo_report1.jpg" loading="lazy"></a>
+				<a href=""><img src="image/report_compress1.jpg" loading="lazy"></a>
 				<a href=""><p><b>Балкони</b></p></a>
 				<a href=""><p>Переглянути роботи</p></a>
 			</div>
@@ -699,11 +700,26 @@
 	</section>
 	<section id="faq">
 		<h1>Відповіді на запитання</h1>
-		<button class="b_faq">Який розклад роботи компанії?</button>
-		<button class="b_faq"></button>
-		<button class="b_faq">Чи можна замовити планове сервісне обслуговування?</button>
-		<button class="b_faq">Які послуги з ремонту металопластикових вікон і дверей ми надаємо?</button>
-		<button class="b_faq">Запитання 5</button>
+		<button id="b_faq1" class="b_faq" onclick="open_close_faq(1)">Який розклад роботи компанії?</button>
+			<div id="faq_div1" class="faq_div">
+				<p>Відповідь на запитання "Який розклад роботи компанії?"</p>
+			</div>
+		<button id="b_faq2" class="b_faq" onclick="open_close_faq(2)"></button>
+			<div id="faq_div2" class="faq_div">
+				<p>Відповідь на запитання "Який розклад роботи компанії?"</p>
+			</div>
+		<button id="b_faq3" class="b_faq" onclick="open_close_faq(3)">Чи можна замовити планове сервісне обслуговування?</button>
+			<div id="faq_div3" class="faq_div">
+				<p>Відповідь на запитання </p>
+			</div>
+		<button id="b_faq4" class="b_faq" onclick="open_close_faq(4)">Які послуги з ремонту металопластикових вікон і дверей ми надаємо?</button>
+			<div id="faq_div4" class="faq_div">
+				<p>Відповідь на запитання </p>
+			</div>
+		<button id="b_faq5" class="b_faq" onclick="open_close_faq(5)">Запитання 5</button>
+			<div id="faq_div5" class="faq_div">
+				<p>Відповідь на запитання </p>
+			</div>
 	</section>
 	<script src="js/main.js"></script>
   </body>
