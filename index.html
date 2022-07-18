@@ -88,22 +88,25 @@
 			<button id="aw_part_button4" class="aw_part_button" onclick="b_naw_(4)">Фурнітура</button>
 			<button id="aw_part_button5" class="aw_part_button" onclick="b_naw_(5)">Додаткові комплектуючі</button>
 		</div>-->
-		<article>
-			<div id="aw_part_article1">
+		
+		<div style="display: block;" id="aw_part1" class="part_about_window">
+		
 			<button id="b_about_defin_profile" class="b_about_defin" onclick="open_close_about_defin(1)">Що таке профіль</button>
-			<div id="about_defin_profile" class="div_about_defin" style="display: none;">
+			<div id="about_defin_profile" class="div_about_defin">
 				<p> Віконний профіль - це ...</p>
-				<p>Під час вибору профілю пропонуємо звернути увагу на основні фактори: </p>
-				<p> - кількість камер;</p>
-				<p> - можлива товщина склопакета;</p>
-				<p> - монтажна глибина.</p>
+				<p>Під час вибору профілю пропонуємо звернути увагу на основні фактори: 
+				 <br>- кількість камер;
+				 <br>- можлива товщина склопакета;
+				 <br>- монтажна глибина.</p>
 			</div>
+			
 			<h3>Вікна</h3>
-			<div id="wpm_b_list">
-				<button id="b_wpm_epsilon" class="win_prof_manuf" onclick="open_close_wpm(1)">EPSILON</button>
-					<div style="display: none;" class="wpm_width" id="wpm_epsilon">
+			<div class="m_b_list">
+				
+				<button id="b_wpm_epsilon" class="b_manuf" onclick="open_close_wm(1)">EPSILON</button>
+					<div class="wm_flex" id="wpm_epsilon">
 													
-						<div class="div_about_window">
+						<article class="article_about_profile">
 							
 							<p><b>Epsilon Optima</b></p>
 							<p>Інноваційна профільна система власного виробництва з максимальними енергозберігаючими 
@@ -125,9 +128,9 @@
 								</div>
 								<div><img src="image\epsilonOptima2016.jpg" loading="lazy"></div>
 							</div>
-						</div>
+						</article>
 						
-						<div class="div_about_window">
+						<article class="article_about_profile">
 							
 							<p><b>Epsilon Comfort</b></p>
 							<p>Профільна система, розроблена для людей, які надають перевагу витонченим формам класичного вікна</p>
@@ -148,9 +151,9 @@
 									</div>
 								<div><img src="image\epsilon_comfort-2016.jpg" loading="lazy"></div>
 							</div>
-						</div>
+						</article>
 						
-						<div class="div_about_window">
+						<article class="article_about_profile">
 							
 							<p><b>Epsilon Basic</b></p>
 							<p>Профільна система власного виробництва за доступною ціною</p>
@@ -171,8 +174,8 @@
 								</div>
 							<div><img src="image\epsilon_3Basic.jpg" loading="lazy"></div>
 							</div>
-						</div>
-						<div class="div_about_window">
+						</article>
+						<article class="article_about_profile">
 							
 							<p><b>Epsilon PORTAL</b></p>
 							<p>Розсувна система - "портал" - унікальне конструкторське рішення, яке широко 
@@ -195,14 +198,13 @@
 								</div>
 							<div><img src="image\epsilon_portal_2022.jpg" loading="lazy"></div>
 							</div>
-						</div>
+						</article>
 						
 					</div>
-					
-					
-				<button id="b_wpm_rehau" class="win_prof_manuf" onclick="open_close_wpm(2)">REHAU</button>
-					<div style="display: none;" class="wpm_width" id="wpm_rehau">
-						<div class="div_about_window">
+						
+				<button id="b_wpm_rehau" class="b_manuf" onclick="open_close_wm(2)">REHAU</button>
+					<div class="wm_flex" id="wpm_rehau">
+						<article class="article_about_profile">
 							<p><b>REHAU GENEO RAU-FIPRO X</b></p>
 							<p>Максимальні розміри віконних конструкцій та розмаїття кольорових рішень.</p>
 							<div class="daw_data">	
@@ -222,9 +224,9 @@
 								</div>
 								<div class="div_rehau_img"><img src="image\rehau1.jpg" loading="lazy"></div>
 							</div>
-						</div>
+						</article>
 						
-						<div class="div_about_window">
+						<article class="article_about_profile">
 							
 							<p><b>REHAU SYNEGO</b></p>
 							<p>"Вимкніть" шум та почувайтесь комфортно</p>
@@ -245,9 +247,9 @@
 								</div>
 								<div class="div_rehau_img"><img src="image\rehau2.jpg" loading="lazy"></div>
 							</div>
-						</div>
+						</article>
 						
-						<div class="div_about_window">
+						<article class="article_about_profile">
 							
 							<p><b>REHAU Brillant-Design</b></p>
 							<p>Ефективна теплоізоляція у поєднанні з вишуканим дизайном</p>
@@ -268,9 +270,9 @@
 								</div>
 								<div class="div_rehau_img"><img src="image\rehau3.jpg" loading="lazy"></div>
 							</div>
-						</div>
+						</article>
 						
-						<div class="div_about_window">
+						<article class="article_about_profile">
 							<div class="daw_data">
 							<p><b>REHAU Euro-Design 70</b></p>
 							<p>Оптимальний рівень теплоізоляції Вашої оселі</p>
@@ -292,9 +294,9 @@
 								<div class="div_rehau_img"><img src="image\rehau-euro-design-70.jpg" loading="lazy"></div>
 								</div>
 							</div>
-						</div>
+						</article>
 						
-						<div class="div_about_window">
+						<article class="article_about_profile">
 							
 							<p><b>REHAU Euro-Design 60</b></p>
 							<p>Профільна система для засклення балконних блоків, балконів та лоджій, 
@@ -317,13 +319,13 @@
 								</div>
 								<div class="div_rehau_img"><img src="image\rehau-euro-design-60.jpg" loading="lazy"></div>
 							</div>
-						</div>
+						</article>
 						
 					</div>
 					
-				<button id="b_wpm_salamander" class="win_prof_manuf" onclick="open_close_wpm(3)">SALAMANDER</button>
-					<div style="display: none;" class="wpm_width" id="wpm_salamander">
-						<div class="div_about_window">
+				<button id="b_wpm_salamander" class="b_manuf" onclick="open_close_wm(3)">SALAMANDER</button>
+					<div class="wm_flex" id="wpm_salamander">
+						<article class="article_about_profile">
 							
 							<p><b>Salamander bluEvolution</b></p>
 							<p>Нове покоління теплих вікон, створене з урахуванням передових німецьких технологій</p>
@@ -344,9 +346,9 @@
 								</div>
 								<div><img src="image\salamander_profil360_blu_005.jpg" loading="lazy"></div>
 							</div>
-						</div>
+						</article>
 						
-						<div class="div_about_window">
+						<article class="article_about_profile">
 							
 							<p><b>Salamander Streamline 76</b></p>
 							<p>Адаптація під будь-які види скління та безмежні дизайнерські можливості</p>
@@ -367,9 +369,9 @@
 								</div>
 								<div><img src="image\salamander_profil360_stream_006.jpg" loading="lazy"></div>
 							</div>
-						</div>
+						</article>
 						
-						<div class="div_about_window">
+						<article class="article_about_profile">
 							
 							<p><b>Salamander 2D</b></p>
 							<p>Оптимальне співвідношення дизайну й технічних характеристик за доступною ціною</p>
@@ -390,9 +392,9 @@
 									</div>
 								<div><img src="image\salamander_profil360_2d_006.jpg" loading="lazy"></div>
 							</div>
-						</div>
+						</article>
 						
-						<div class="div_about_window">
+						<article class="article_about_profile">
 							
 							<p><b>Salamander HST</b></p>
 							<p>Практичність і економія простору</p>
@@ -413,12 +415,13 @@
 								</div>
 							<div><img src="image\salamander_hst.jpg" loading="lazy"></div>
 							</div>
-						</div>
+						</article>
 						
 					</div>
-				<button id="b_wpm_wds" class="win_prof_manuf" onclick="open_close_wpm(4)">WDS</button>
-					<div style="display: none;" class="wpm_width" id="wpm_wds">
-						<div class="div_about_window">
+				
+				<button id="b_wpm_wds" class="b_manuf" onclick="open_close_wm(4)">WDS</button>
+					<div class="wm_flex" id="wpm_wds">
+						<article class="article_about_profile">
 							
 							<p><b>WDS 8S</b></p>
 							<p>Флагман серед систем WDS</p>
@@ -440,9 +443,9 @@
 								<div><img src="image\wds800_s_class_white.jpg" loading="lazy"></div>
 							
 							</div>
-						</div>
+						</article>
 						
-						<div class="div_about_window">
+						<article class="article_about_profile">
 							
 							<p><b>WDS 7S</b></p>
 							<p>Першокласні вікна для будинків і квартир</p>
@@ -463,9 +466,9 @@
 								</div>
 								<div><img src="image\wds_700_white-1.jpg" loading="lazy"></div>
 							</div>
-						</div>
+						</article>
 						
-						<div class="div_about_window"> <!--style="background: #d7d067;"--> 
+						<article class="article_about_profile"> <!--style="background: #d7d067;"--> 
 							
 							<p><b>WDS 6S</b></p>
 							<p>Більше світла для будинків і квартир</p>
@@ -486,9 +489,9 @@
 								</div>
 								<div><img src="image\wds_6s_white_opened.jpg" loading="lazy"></div>
 							</div>
-						</div>
+						</article>
 						
-						<div class="div_about_window"  >
+						<article class="article_about_profile">
 							
 							<p><b>WDS 5S</b></p>
 							<p>Класика, перевірена часом</p>
@@ -509,9 +512,9 @@
 								</div>
 								<div><img src="image\wds_5s_white_opened.jpg" loading="lazy"></div>
 							</div>
-						</div>
+						</article>
 						
-						<div class="div_about_window">
+						<article class="article_about_profile">
 							
 							<p><b>WDS SL60</b></p>
 							<p>Розсувна система для вікон та дверей</p>
@@ -521,15 +524,16 @@
 								</div>
 								<div><img style="max-width: 250px" src="image\wds_sl60_sliding_image1.jpg" loading="lazy"></div>
 							</div>
-						</div>
+						</article>
 					</div>
 				
 			</div>
+		
 			<h3>Двері</h3>
-			<div id="dpm_b_list"> 
-				<button id="b_dpm_epsilon" class="win_prof_manuf" onclick="open_close_wpm(5)">EPSILON</button>
-				<div style="display: none;" class="wpm_width" id="dpm_epsilon">
-					<div class="div_about_window">
+			<div class="m_b_list"> 
+				<button id="b_dpm_epsilon" class="b_manuf" onclick="open_close_wm(5)">EPSILON</button>
+				<div class="wm_flex" id="dpm_epsilon">
+					<article class="article_about_profile">
 							<p><b>Epsilon Т 104/58, S 96/58, Т 104/70, S 104/70</b></p>
 							<p>Високий рівень енергозбереження створює зручності при використанні в приватних будинках,
 								за містом або в міських квартирах, з підвищеними вимогами до енергозбереження.</p>
@@ -551,12 +555,12 @@
 								</div>
 								<div><img src="image\epsilon_t104_58.jpg" loading="lazy"></div>
 							</div>
-					</div>	
+					</article>	
 				</div>
 				
-				<button id="b_dpm_rehau" class="win_prof_manuf" onclick="open_close_wpm(6)">REHAU</button>
-				<div style="display: none;" class="wpm_width" id="dpm_rehau">
-					<div class="div_about_window">
+				<button id="b_dpm_rehau" class="b_manuf" onclick="open_close_wm(6)">REHAU</button>
+				<div class="wm_flex" id="dpm_rehau">
+					<article class="article_about_profile">
 							
 							<p><b>REHAU Synego Slide</b></p>
 							<p>Новий тип відкривання - зручно та вигідно!</p>
@@ -573,16 +577,16 @@
 									</table>
 									<a href="https://www.rehau.com/ua-uk/rehau-synego-slide" target="_blank">Переглянути на сайті<br> виробника</a>
 								</div>
-								<div class="wpm_width"><div><img src="image\rehau_synego_slide1.jpg" loading="lazy"></div><div><img src="image\rehau_synego_slide2.jpg"></div></div>
+								<div class="wm_flex"><div><img src="image\rehau_synego_slide1.jpg" loading="lazy"></div><div><img src="image\rehau_synego_slide2.jpg"></div></div>
 								
 							</div>
 							
-					</div>
+					</article>
 				</div>
 				
-				<button id="b_dpm_wds" class="win_prof_manuf" onclick="open_close_wpm(7)">WDS</button>
-				<div style="display: none;" class="wpm_width" id="dpm_wds">
-					<div class="div_about_window">
+				<button id="b_dpm_wds" class="b_manuf" onclick="open_close_wm(7)">WDS</button>
+				<div class="wm_flex" id="dpm_wds">
+					<article class="article_about_profile">
 							
 							<p><b>WDS SL60</b></p>
 							<p>Розсувна система для вікон та дверей</p>
@@ -592,8 +596,8 @@
 								
 								<div><img src="image\wds_sliding_image2.jpg" loading="lazy"></div>
 							</div>
-					</div>
-					<div class="div_about_window">
+					</article>
+					<article class="article_about_profile">
 							
 							<p><b>WDS ДВЕРІ</b></p>
 							<p>Дверні стулки з монтажною шириною 70мм або 60мм, внутрішнього чи зовнішнього 
@@ -603,28 +607,131 @@
 									<a href="https://wds.ua/door/" target="_blank">Переглянути на сайті<br> виробника</a>
 								</div>
 								
-								<div class="wpm_width">
+								<div class="wm_flex">
 								<div><img src="image\wds_door60.jpg" loading="lazy"></div>
 								<div><img src="image\wds_door70.jpg" loading="lazy"></div>
 								</div>
 								
 							</div>
-					</div>
+					</article>
 				</div>
 				<!--
 				
 				-->
 			</div>
+		
+		</div>
+		
+		<div id="aw_part2" class="part_about_window">
+			<button id="b_about_defin_laminate" class="b_about_defin" onclick="open_close_about_defin(2)">Що таке ламінація</button>
+			<div id="about_defin_laminate" class="div_about_defin">
+				<p> Ламінація - це ...</p>
+				<p>Ламінація може бути: 
+				 <br>- 1;
+				 <br>- 2;
+				 <br>- 3.</p>
 			</div>
-			<div id="aw_part_article2">
+			<div class="m_b_list">
+				<h3>Ламінація</h3>
+				<button id="b_wlm_epsilon" class="b_manuf" onclick="open_close_wm(9)">EPSILON</button>
+					<div class="wm_flex" id="wlm_epsilon">
+						<article class="article_about_laminate">
+							<p><b>Стандартні кольори ламінації</b></p> 
+							<p>Для Epsilon Optima, T 104/70, S 104/70</p>
+							<div><img src="image\laminate\epsilon_laminate_optima_ts70.jpg" loading="lazy"></div>
+							<p>Для Epsilon Comfort, T 104/58, S 96/58</p>
+							<div><img src="image\laminate\epsilon_laminate_comfort_ts58.jpg" loading="lazy"></div>
+							<p><b>Нестандартні кольори ламінації</b></p>
+							<div><img src="image\laminate\epsilon_laminate21.jpg" loading="lazy"></div>
+							<div><img src="image\laminate\epsilon_laminate22.jpg" loading="lazy"></div>
+						</article>
+					</div>
+
+				<button id="b_wlm_rehau" class="b_manuf" onclick="open_close_wm(10)">REHAU</button>
+					<div class="wm_flex" id="wlm_rehau">
+						<article class="article_about_laminate">
+							<p><b>REHAU Kaleido Color</b> - понад <b>400</b> варіантів декорів</p>
+							<div>
+								<a href="https://www.rehau.com/ua-uk/design-rehau-kaleido-color" target="_blank">Переглянути на сайті<br> виробника</a>
+							</div>
+						</article>
+					</div>
+					
+				<button id="b_wlm_salamander" class="b_manuf" onclick="open_close_wm(11)">SALAMANDER</button>
+					<div class="wm_flex" id="wlm_salamander">
+						<article class="article_about_laminate">
+							<p><b>Стандартні декори ламінації по Renolit</b></p>
+							<div><img src="image\laminate\standartnie-dekori-laminatsii-po-renolit.jpg" loading="lazy"></div>
+							<p><b>Додаткові декори ламінації по Renolit</b></p>
+							<div><img src="image\laminate\dopolnitelnie-dekori-laminatsii-po-renolit.jpg" loading="lazy"></div>
+							<div><img src="image\laminate\dopolnitelnie-dekori-laminatsii-po-renolit2.jpg" loading="lazy"></div>
+							<div id="salamander_laminate_tinyimg"><img src="image\laminate\dopolnitelnie-dekori-laminatsii3.jpg" loading="lazy"></div>
+						</article>
+					</div>
+				
+				<button id="b_wlm_wds" class="b_manuf" onclick="open_close_wm(12)">WDS</button>
+					<div class="wm_flex" id="wlm_wds">
+						<article class="article_about_laminate">
+							<p><b>WDS Color</b> — <b>40</b> кольорів ламінації, <b>3</b> кольори профілю, <b>3</b> кольори ущільнювача.</p>
+							
+							<div id="wds_laminate_premium"><img src="image\laminate\wds_laminate_premium.jpg" loading="lazy"></div>
+							<div><img src="image\laminate\wds_laminate1.jpg" loading="lazy"></div>
+							<div><img src="image\laminate\wds_laminate2.jpg" loading="lazy"></div>
+							<div><img src="image\laminate\wds_laminate3.jpg" loading="lazy"></div>
+							<div><img src="image\laminate\wds_laminate4.jpg" loading="lazy"></div>
+							<p></p>
+							<div><img src="image\laminate\wds_laminate51.jpg" loading="lazy"></div>
+							<p>1 - ламінація Дуб Шеффілд, 2 - білий профіль, 3 - сірий ущільнювач</p>
+							<div><img src="image\laminate\wds_laminate52.jpg" loading="lazy"></div>
+							<p>1 - ламінація Антрацит, 2 - сірий профіль, 3 - чорний ущільнювач</p>
+							<div><img src="image\laminate\wds_laminate53.jpg" loading="lazy"></div>
+							<p>1 - ламінація Золотий Дуб, 2 - бежевий профіль, 3 - бежевий ущільнювач</p>
+							<div>
+								<a href="https://wds.ua/laminate/" target="_blank">Переглянути на сайті<br> виробника</a>
+							</div>
+						</article>
+					</div>
+				
 			</div>
-			<div id="aw_part_article3">
+		</div>
+		<div id="aw_part3" class="part_about_window">
+		</div>
+		<div id="aw_part4" class="part_about_window">
+			<button id="b_about_defin_laminate" class="b_about_defin" onclick="open_close_about_defin(2)">Що таке Фурнітура</button>
+			<div id="about_defin_laminate" class="div_about_defin">
+				<p> Фурнітура - це ...</p>
+				<p>Під час вибору ламінації пропонуємо звернути увагу на основні фактори: 
+				 <br>- 1;
+				 <br>- 2;
+				 <br>- 3.</p>
 			</div>
-			<div id="aw_part_article4">
+			<div class="m_b_list">
+				<h3>Фурнітура</h3>
+				<button id="" class="b_manuf" onclick="">EPSILON</button>
+					<div class="wm_flex" id="wlm_epsilon">
+						
+					</div>
+						
+				<button id="" class="b_manuf" onclick="">REHAU</button>
+					<div class="wm_flex" id="wlm_rehau">
+						
+					</div>
+					
+				<button id="" class="b_manuf" onclick="">SALAMANDER</button>
+					<div class="wm_flex" id="wlm_salamander">
+						
+					</div>
+				
+				<button id="" class="b_manuf" onclick="">WDS</button>
+					<div class="wm_flex" id="wlm_wds">
+						
+					</div>
+				
 			</div>
-			<div id="aw_part_article5">
-			</div>
-		</article>
+		</div>
+		<div id="aw_part5" class="part_about_window">
+		</div>
+		
 					
 		
 	</section>

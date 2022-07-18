@@ -1,19 +1,19 @@
 
 var prev_aw_b = "aw_part_button1";
-var prev_aw_article = "aw_part_article1";
+var prev_aw_article = "aw_part1";
 
 
 function b_naw_(n) {
 	switch (n) {
-			case 1: {b_nav_change("aw_part_button1", 'Профіль (рама)', 'aw_part_article1');} 
+			case 1: {b_nav_change("aw_part_button1", 'Профіль (рама)', 'aw_part1');} 
 			break;
-			case 2: {b_nav_change("aw_part_button2", 'Ламінація', 'aw_part_article2');} 
+			case 2: {b_nav_change("aw_part_button2", 'Ламінація', 'aw_part2');} 
 			break;
-			case 3: {b_nav_change("aw_part_button3", 'Типи відкривання', 'aw_part_article3');} 
+			case 3: {b_nav_change("aw_part_button3", 'Типи відкривання', 'aw_part3');} 
 			break;
-			case 4: {b_nav_change("aw_part_button4", 'Фурнітура', 'aw_part_article4');} 
+			case 4: {b_nav_change("aw_part_button4", 'Фурнітура', 'aw_part4');} 
 			break;
-			case 5: {b_nav_change("aw_part_button5", 'Додаткові комплектуючі', 'aw_part_article5');} 
+			case 5: {b_nav_change("aw_part_button5", 'Додаткові комплектуючі', 'aw_part5');} 
 			break;
 		}
 }
@@ -54,7 +54,7 @@ function open_close_about_defin(numberDefin) {
 	switch (numberDefin) {
 			case 1: {changeDisplayBlock("about_defin_profile"); change_button_style("b_about_defin_profile"); } 
 			break;
-			case 2: {changeDisplayBlock(""); } 
+			case 2: {changeDisplayBlock("about_defin_laminate"); change_button_style("b_about_defin_laminate");} 
 			break;
 			case 3: {changeDisplayBlock(""); } 
 			break;
@@ -63,7 +63,7 @@ function open_close_about_defin(numberDefin) {
 		}
 }
 
-function open_close_wpm(b_number) {
+function open_close_wm(b_number) {
 	switch (b_number) {
 			case 1: {changeDisplayFlex("wpm_epsilon"); change_button_style("b_wpm_epsilon");} 
 			break;
@@ -78,13 +78,20 @@ function open_close_wpm(b_number) {
 			case 6: {changeDisplayFlex("dpm_rehau"); change_button_style("b_dpm_rehau");}
 			break;
 			case 7: {changeDisplayFlex("dpm_wds"); change_button_style("b_dpm_wds");}
+			break;
+			case 9: {changeDisplayFlex("wlm_epsilon"); change_button_style("b_wlm_epsilon");} 
+			break;
+			case 10: {changeDisplayFlex("wlm_rehau"); change_button_style("b_wlm_rehau");} 
+			break;
+			case 11: {changeDisplayFlex("wlm_salamander"); change_button_style("b_wlm_salamander");} 
+			break;
+			case 12: {changeDisplayFlex("wlm_wds"); change_button_style("b_wlm_wds");} 
 		}
 }
 
 
 function changeDisplayFlex(y) {
 	let x = document.getElementById(y);
-
 	if (x.style.display === "flex") {
 		x.style.display = "none";
 	} else {

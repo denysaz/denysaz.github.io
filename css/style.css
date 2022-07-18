@@ -150,13 +150,12 @@ nav a {
 }
 
 #s_about_window {
-	
 	padding-left: 3%;
 	padding-right: 3%;
 }
-#s_about_window article {
+.part_about_window {
 	border: solid 1px #d7d067;
-
+	display: none;
 }
 
 
@@ -184,19 +183,11 @@ nav a {
 	
 }
 
-article h3 {
+h3 {
 	text-align: center;
 }
 
-#wpm_b_list {
-	width: 90%;
-	margin: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-#dpm_b_list {
+.m_b_list {
 	width: 90%;
 	margin: auto;
 	display: flex;
@@ -205,7 +196,7 @@ article h3 {
 	justify-content: center;
 }
 
-.win_prof_manuf {
+.b_manuf {
 	width: 100%;
 	border-width: 2px;
 	border-color: #c6900070;
@@ -218,14 +209,14 @@ article h3 {
 
 
 
-.wpm_width {
+.wm_flex {
 	width: 100%;
-	display: flex;
+	display: none;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
 
-.div_about_window {
+.article_about_profile {
 	/*display: flex;
 	justify-content: space-evenly;
 	flex-direction: column;*/
@@ -235,6 +226,13 @@ article h3 {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+.article_about_laminate {
+	background: #bcd2dd;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left:  10px;
+	padding-right:  10px;
+}
 
 .f_column {
 	text-align: center;
@@ -242,7 +240,7 @@ article h3 {
 	padding-right: 4px;
 }
 
-.div_about_window table {
+.article_about_profile table {
 	max-width: 300px;
 	border-collapse: collapse; 
 	margin-bottom: 20px;
@@ -251,22 +249,22 @@ article h3 {
 	margin-right: auto;
 }
 
-.div_about_window tr {
+.article_about_profile tr {
 	border: 1px solid;
 	border-color: #fff;
 }
 
-.div_about_window td {
+.article_about_profile td {
 	font-size: 1.2em;
 	color: #151b4e;
 	
 	
 }
-.div_about_window b {
+.article_about_profile b, .article_about_laminate b {
 	font-size: 1.3em;
 }
 
-.div_about_window p {
+.article_about_profile p, .article_about_laminate p {
 	text-align: center;
 	font-size: 1.2em;
 	color: #151b4e;
@@ -274,7 +272,7 @@ article h3 {
 }
 
 
-.div_about_window a {
+.article_about_profile a, .article_about_laminate a {
 	display: block;
 	width: 95%;
 	margin: auto;
@@ -290,7 +288,11 @@ article h3 {
 	text-align: center;
 	word-wrap: break-word;
 }
-
+.article_about_laminate a {
+	max-width: 300px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
 .daw_data {
 	/*max-width: 30%;
 	flex-direction: column;*/
@@ -327,8 +329,27 @@ article h3 {
 	max-width: 150px;
 
 }
+#wlm_salamander img {
+	
+}
+#wlm_wds img, #wlm_epsilon img {
+	width: 100%;
+	max-width: 1000px;
+}
+#wlm_salamander img {
+	width: 100%;
+	max-width: 710px;
+}
+#wds_laminate_premium {
+	width:  80%;
+	margin: auto;
+}
+#salamander_laminate_tinyimg {
+	max-width: 430px;
+}
 
 .div_about_defin {
+	display: none;
 	padding-left: 3%;
 	padding-right: 3%;
 }
@@ -340,7 +361,7 @@ article h3 {
 	padding: 5px;
 }
 
-#nav_about_window button:hover, article button:hover {
+#nav_about_window button:hover {
 	background-color: #c69000;
 	color: #fff;
 }
@@ -554,7 +575,10 @@ article h3 {
 	.aw_part_button {
 		width: 100%;
 	}
-	.div_about_window {
+	.article_about_profile {
+		width: 100%;
+	}
+	.article_about_laminate {
 		width: 100%;
 	}
 	.review {
@@ -581,6 +605,9 @@ article h3 {
 		padding-left: 5%;
 		padding-top: 250px;
 	}
+	.report {
+		width: 85%;
+	}
 }
 @media (max-width: 350px) {
 	#div_about_us {
@@ -594,17 +621,7 @@ article h3 {
 		min-width: 0;	
 	}
 }
-/*@media (max-width: 400px) {
-	table td {
-		font-size: 14px;
-	}	
-}
 
-@media (max-width: 350px) {
-	table td {
-		font-size: 12px;
-	}	
-}*/
 
 
 
