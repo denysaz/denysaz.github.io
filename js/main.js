@@ -9,8 +9,8 @@ function b_naw_(n) {
 			break;
 			case 2: {b_nav_change("aw_part_button2", 'Ламінація', 'aw_part2');} 
 			break;
-			case 3: {b_nav_change("aw_part_button3", 'Типи відкривання', 'aw_part3');} 
-			break;
+			/*case 3: {b_nav_change("aw_part_button3", 'Типи відкривання', 'aw_part3');} 
+			break;*/
 			case 4: {b_nav_change("aw_part_button4", 'Фурнітура', 'aw_part4');} 
 			break;
 			case 5: {b_nav_change("aw_part_button5", 'Додаткові комплектуючі', 'aw_part5');} 
