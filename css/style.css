@@ -433,7 +433,7 @@ h3 {
 	align-items: center;
 	flex-wrap: wrap;
 }
-.report {
+.report_link {
 	display: block;
 	width: 30%;
 	margin-bottom: 20px;
@@ -445,26 +445,26 @@ h3 {
 }
 /* #d7d067;*/
 
-.report img {
+.report_link img {
 	width: 100%;
-	max-width: 200px;
+	max-width: 150px;
 	display: block;
 	margin: auto;
 	
 }
-.report b {
+.report_link b {
 	font-size: 1.2em;
 }
 
-.report a {
+.report_link a {
 	text-decoration: none;
 }
-.report p {
+.report_link p {
 	text-align: center;
 	color: #151b4e;
 	margin: 10px;
 }
-.report p:hover {
+.report_link p:hover {
 	color: #fff;
 }
 
@@ -539,7 +539,7 @@ h3 {
 	#s_about_us {
 		background-image: url("../image/about_us_background_mobile.jpg");
 	}
-	.report {
+	.report_link {
 		width: 75%;
 	}
 	nav {
