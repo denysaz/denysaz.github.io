@@ -85,7 +85,9 @@ function open_close_wm(b_number) {
 			break;
 			case 11: {changeDisplayFlex("wlm_salamander"); change_button_style("b_wlm_salamander");} 
 			break;
-			case 12: {changeDisplayFlex("wlm_wds"); change_button_style("b_wlm_wds");} 
+			case 12: {changeDisplayFlex("wlm_wds"); change_button_style("b_wlm_wds");}
+			break;
+			case 13: {changeDisplayFlex("fm_axor"); change_button_style("b_fm_axor");} 			
 		}
 }
 

@@ -217,9 +217,9 @@ h3 {
 }
 
 .article_about_profile {
-	/*display: flex;
-	justify-content: space-evenly;
-	flex-direction: column;*/
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 	width: 48%;
 	
 	background: #bcd2dd;/*bcd2dd 337ab7 151b4e dabc28 d7d067 */
@@ -272,6 +272,7 @@ h3 {
 }
 
 
+
 .article_about_profile a, .article_about_laminate a {
 	display: block;
 	
@@ -307,8 +308,29 @@ h3 {
 	margin-bottom: 20px;
 }
 
+.div_about_defin {
+	display: none;
+	padding-left: 3%;
+	padding-right: 3%;
+}
 
+.b_about_defin {
+	margin: 10px;
+	background-color: #d7d067;
+	border: 1px solid;
+	padding: 5px;
+}
 
+#nav_about_window button:hover {
+	background-color: #c69000;
+	color: #fff;
+}
+/*button:active {
+	background-color: #c69000;
+	color: #000;
+}*/
+
+/*CATALOG IMAGES SIZE*/
 
 #wpm_wds img, #dpm_wds img {
 	width: 100%;
@@ -347,28 +369,13 @@ h3 {
 #salamander_laminate_tinyimg {
 	max-width: 430px;
 }
-
-.div_about_defin {
-	display: none;
-	padding-left: 3%;
-	padding-right: 3%;
+#fm_axor img {
+	width: 100%;
+	max-width: 500px;
 }
 
-.b_about_defin {
-	margin: 10px;
-	background-color: #d7d067;
-	border: 1px solid;
-	padding: 5px;
-}
 
-#nav_about_window button:hover {
-	background-color: #c69000;
-	color: #fff;
-}
-/*button:active {
-	background-color: #c69000;
-	color: #000;
-}*/
+/*REVIEWS SECTION*/
 
 #s_reviews {
 	margin-top: 20px;
@@ -468,6 +475,12 @@ h3 {
 	color: #fff;
 }
 
+figure {
+	margin: 0;
+}
+figcaption {
+	padding-bottom: 10px;
+}
 
 /*REPORTS.HTML*/
 
@@ -482,12 +495,10 @@ h3 {
 	display: flex;
 	flex-wrap: wrap;
 	width: 90%;
-	margin: auto;
 	justify-content: space-evenly;
 	align-items: center;
 	background: #bcd2dd;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin: 10px auto;
 	
 }
 #s_reports_page table {  
@@ -592,8 +603,9 @@ h3 {
 	.faq_div {
 		width: 100%;
 	}
-	#s_reports_page article {
-		width: 96%;
+	
+	.report_block {
+		width: 100%;
 	}
 	.report_data {
 		width: 96%;
@@ -611,7 +623,7 @@ h3 {
 		width: 85%;
 	}
 }
-@media (max-width: 350px) {
+@media (max-width: 380px) {
 	#div_about_us {
 		padding: 5px;
 	}
@@ -622,6 +634,10 @@ h3 {
 		padding: 5px  2%;
 		min-width: 0;	
 	}
+	.report_data {
+		width: 100%;
+	}
+	
 }
 
 
