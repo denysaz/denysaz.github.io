@@ -85,7 +85,7 @@ nav {
 	justify-content: center;
 	background-color: #dbbd2a;
 }
-#b_change_nav {
+.b_change_nav {
 	width: 100%;
 	background-color: #c69000;
 }
@@ -108,7 +108,7 @@ nav a {
 		background-color: #c69000;
 		color: #fff;
 	}
-	#b_change_nav {
+	.b_change_nav {
 		display: none;
 	}
 }
@@ -558,7 +558,7 @@ figcaption {
 		flex-direction: column;
 		height: auto;
 	}
-	#b_change_nav {
+	.b_change_nav {
 		display: flex;
 		align-items: center;
 		justify-content: center;
