@@ -56,7 +56,7 @@ function open_close_about_defin(numberDefin) {
 			break;
 			case 2: {changeDisplayBlock("about_defin_laminate"); change_button_style("b_about_defin_laminate");} 
 			break;
-			case 3: {changeDisplayBlock(""); } 
+			case 3: {changeDisplayBlock("about_defin_furniture"); change_button_style("b_about_defin_furniture");} 
 			break;
 			case 4: {changeDisplayBlock(""); } 
 			break;
@@ -72,12 +72,6 @@ function open_close_wm(b_number) {
 			case 3: {changeDisplayFlex("wpm_salamander"); change_button_style("b_wpm_salamander");} 
 			break;
 			case 4: {changeDisplayFlex("wpm_wds"); change_button_style("b_wpm_wds");} 
-			break;
-			case 5: {changeDisplayFlex("dpm_epsilon"); change_button_style("b_dpm_epsilon");} 
-			break;
-			case 6: {changeDisplayFlex("dpm_rehau"); change_button_style("b_dpm_rehau");}
-			break;
-			case 7: {changeDisplayFlex("dpm_wds"); change_button_style("b_dpm_wds");}
 			break;
 			case 9: {changeDisplayFlex("wlm_epsilon"); change_button_style("b_wlm_epsilon");} 
 			break;
