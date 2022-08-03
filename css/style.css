@@ -274,10 +274,9 @@ tr {
 
 
 
-.article_about_profile a, .article_about_laminate a {
+.article_about_profile a, .article_about_laminate a, #all_reviews_link {
 	display: block;
 	
-	margin: auto;
 	text-decoration: none;
 	color: #151b4e;
 	
@@ -288,8 +287,12 @@ tr {
 	background: #ffffff;
 	
 	text-align: center;
-	word-wrap: break-word;
 }
+#all_reviews_link {
+	max-width: 300px;
+	margin: 15px auto;
+}
+
 .article_about_laminate a {
 	max-width: 300px;
 	margin-top: 15px;
@@ -344,6 +347,7 @@ tr {
 	min-width: 90px;
 	font-size: 1em;
 }
+
 
 
 /*CATALOG IMAGES SIZE*/
@@ -408,6 +412,10 @@ tr {
 	padding-left: 3%;
 	padding-right: 3%;
 }
+
+#all_reviews_block .review {
+	width: 60%;
+}
 .review {
 	width: 30%;
 	background-color: #ffffff;
@@ -423,7 +431,7 @@ tr {
 	padding-top: 10px;
 } 
 
-#faq {
+#s_faq {
 	margin-top: 5px;
 	border-top: 15px solid #161c50;
 	display: flex;
@@ -447,7 +455,7 @@ tr {
 	background-color: #f9f9f9;
 	display: none;
 }
-#reports {
+#s_reports {
 	border-top: 15px solid #161c50;
 }
 #reports_block {
@@ -608,7 +616,7 @@ figcaption {
 	.article_about_laminate {
 		width: 100%;
 	}
-	.review {
+	.review, #all_reviews_block .review {
 		width: 100%;
 	}
 	.b_faq {
