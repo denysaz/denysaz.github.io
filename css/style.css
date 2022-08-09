@@ -235,6 +235,19 @@ h3, h4 {
 	padding-right:  10px;
 }
 
+.rehau_kaleido {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	max-width: 850px;
+	flex-wrap: wrap;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.rehau_kaleido div {
+	max-width: 400px; 
+}
+
 .f_column {
 	text-align: center;
 	
@@ -274,30 +287,23 @@ tr {
 
 
 
-.article_about_profile a, .article_about_laminate a, #all_reviews_link {
+.article_about_profile a, .laminate_m_link, #all_reviews_link {
 	display: block;
-	
 	text-decoration: none;
 	color: #151b4e;
-	
 	padding-top: 10px;
 	padding-bottom: 10px;
-	
 	font-size: 1.2em;
 	background: #ffffff;
-	
 	text-align: center;
-}
-#all_reviews_link {
 	max-width: 300px;
 	margin: 15px auto;
+	border: 1px #fff solid;
+}
+.article_about_profile a:hover, .laminate_m_link:hover, #all_reviews_link:hover {
+	border: 1px #000 solid;
 }
 
-.article_about_laminate a {
-	max-width: 300px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-}
 .daw_data {
 	/*max-width: 30%;
 	flex-direction: column;*/
@@ -395,7 +401,13 @@ tr {
 	width: 100%;
 	max-width: 270px;
 }
-
+.rehau_kaleido_img {
+	width: 100%;
+	max-width: 300px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
 
 /*REVIEWS SECTION*/
 
@@ -489,6 +501,9 @@ tr {
 	display: block;
 	margin: auto;
 	
+}
+.report_link img:hover {
+	opacity: 0.5;
 }
 .report_link b {
 	font-size: 1.2em;
