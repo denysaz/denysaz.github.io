@@ -324,7 +324,9 @@ tr {
 	padding-left: 3%;
 	padding-right: 3%;
 }
-
+.div_about_defin_cpage {
+	display: block;
+}
 .b_about_defin {
 	margin: 10px;
 	background-color: #d7d067;
@@ -442,7 +444,7 @@ tr {
 	padding-top: 10px;
 } 
 
-#s_faq {
+#s_faq, #s_faq_page {
 	margin-top: 5px;
 	border-top: 15px solid #161c50;
 	display: flex;
@@ -525,6 +527,11 @@ figure {
 	margin: 0;
 }
 figcaption {
+	padding-bottom: 10px;
+}
+
+.catalogue_div_border {
+	border: 1px solid #151b4e50;
 	padding-bottom: 10px;
 }
 
